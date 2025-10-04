@@ -4,10 +4,7 @@ Bruteforce starter template
 '''
 
 from zip_cracker import bruteforce_zipfile
-
-def get_passwords(passwordlist='rockyou.txt', encoding="utf-8"):
-    with open(passwordlist, 'r', encoding=encoding, errors='replace') as f:
-        return [ line.rstrip('\n\r') for line in f ]
+from wordlist_utils import get_passwords
 
 def main():
     print("[+] Beginning bruteforce ")
